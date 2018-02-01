@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3c80ea97_5854e902",
+        "filename": "docs/source/index.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2018-02-01T23:26:40Z",
+      "side": 1,
+      "message": "copy/paste from ucp-integration, I\u0027ll delete this section and will add something more substantial to docs in the future as pegleg evolves",
+      "parentUuid": "d24553ab_95cf1790",
+      "revId": "ea13edde06151c2614cbc99a7c51c916e9cb69d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "514e9907_3c2e11d0",
         "filename": "docs/source/index.rst",
         "patchSetId": 4
@@ -47,6 +65,24 @@
       "writtenOn": "2018-02-01T21:50:15Z",
       "side": 1,
       "message": "Useful to have -eux ?",
+      "revId": "ea13edde06151c2614cbc99a7c51c916e9cb69d7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0d390c1_315f630e",
+        "filename": "tools/pegleg.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2018-02-01T23:26:40Z",
+      "side": 1,
+      "message": "For this patchset, just a direct copy (move) of what we have in our internally hosted repo with the name change to pegleg. I\u0027d prefer to leave these other enhancements to a subsequent patchset.",
+      "parentUuid": "1747a67e_47f3cfff",
       "revId": "ea13edde06151c2614cbc99a7c51c916e9cb69d7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
