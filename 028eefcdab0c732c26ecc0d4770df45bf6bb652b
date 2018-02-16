@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5440b2b9_c150b873",
+        "filename": "docs/source/artifacts.rst",
+        "patchSetId": 4
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011672
+      },
+      "writtenOn": "2018-02-16T14:07:33Z",
+      "side": 1,
+      "message": "I guess this should be 2018 (in other places too).",
+      "revId": "028eefcdab0c732c26ecc0d4770df45bf6bb652b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
