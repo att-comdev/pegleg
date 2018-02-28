@@ -66,6 +66,30 @@
     },
     {
       "key": {
+        "uuid": "a018ad55_c5f52f70",
+        "filename": "tools/pegleg/pegleg/cli.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-02-28T15:19:20Z",
+      "side": 1,
+      "message": "I was just wondering if there\u0027s an option for `validate` (which defaults to True) but if Pegleg will always just need it to be True then I guess there\u0027s no need to override it by declaring a new CLI option.",
+      "parentUuid": "53a358f0_60bfe7a3",
+      "range": {
+        "startLine": 127,
+        "startChar": 0,
+        "endLine": 127,
+        "endChar": 11
+      },
+      "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8dc2404c_d1e36e4e",
         "filename": "tools/pegleg/pegleg/engine/site.py",
         "patchSetId": 1
