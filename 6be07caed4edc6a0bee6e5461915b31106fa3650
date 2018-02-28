@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ed9bc1a5_27453ee4",
+        "filename": "tools/pegleg.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-02-28T10:42:23Z",
+      "side": 1,
+      "message": "This allows this to function on MacOS.",
+      "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
