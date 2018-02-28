@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "53a358f0_60bfe7a3",
+        "filename": "tools/pegleg/pegleg/cli.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-02-28T14:44:30Z",
+      "side": 1,
+      "message": "I have set the `validate` flag to True when linting -- it will be false when rendering.  I admit to not fully understand what this is bringing into the table even after reading the above.  Let me know if I\u0027ve understood correctly.",
+      "parentUuid": "260e15ed_3baeb8ce",
+      "range": {
+        "startLine": 127,
+        "startChar": 0,
+        "endLine": 127,
+        "endChar": 11
+      },
+      "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8dc2404c_d1e36e4e",
         "filename": "tools/pegleg/pegleg/engine/site.py",
         "patchSetId": 1
@@ -53,6 +77,30 @@
       "writtenOn": "2018-02-28T10:48:47Z",
       "side": 1,
       "message": "documents \u003d []",
+      "range": {
+        "startLine": 30,
+        "startChar": 4,
+        "endLine": 30,
+        "endChar": 16
+      },
+      "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa77aaf0_5c8ce7fa",
+        "filename": "tools/pegleg/pegleg/engine/site.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-02-28T14:44:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8dc2404c_d1e36e4e",
       "range": {
         "startLine": 30,
         "startChar": 4,
@@ -88,6 +136,30 @@
     },
     {
       "key": {
+        "uuid": "d04b69af_1b3881a1",
+        "filename": "tools/pegleg/pegleg/engine/util/deckhand.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-02-28T14:44:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0ecff3d4_4364cf5a",
+      "range": {
+        "startLine": 39,
+        "startChar": 18,
+        "endLine": 39,
+        "endChar": 54
+      },
+      "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f6c87b08_0d27d35c",
         "filename": "tools/pegleg/requirements.txt",
         "patchSetId": 1
@@ -99,6 +171,24 @@
       "writtenOn": "2018-02-28T13:21:00Z",
       "side": 1,
       "message": "Should this be pinned to a commit as I thought that was the target pattern?",
+      "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2ddecec8_7479dcf9",
+        "filename": "tools/pegleg/requirements.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-02-28T14:44:30Z",
+      "side": 1,
+      "message": "Yes, just copied from promenade.  Will adjust.",
+      "parentUuid": "f6c87b08_0d27d35c",
       "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
