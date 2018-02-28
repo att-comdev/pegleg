@@ -85,6 +85,23 @@
       "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f6c87b08_0d27d35c",
+        "filename": "tools/pegleg/requirements.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-02-28T13:21:00Z",
+      "side": 1,
+      "message": "Should this be pinned to a commit as I thought that was the target pattern?",
+      "revId": "6be07caed4edc6a0bee6e5461915b31106fa3650",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
