@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b70a5341_2b55848b",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8c790f10_9b4f6d34",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dc08726c_97890875",
         "filename": "Makefile",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "d14655db_fe75a612",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc08726c_97890875",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c20c19ad_87b48250",
         "filename": "Makefile",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2018-03-02T16:30:51Z",
       "side": 1,
       "message": "IMAGE                      ?\u003d ${DOCKER_REGISTRY}/${IMAGE_PREFIX}/${IMAGE_NAME}:${IMAGE_TAG}",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "82708b6f_84be5d5a",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c20c19ad_87b48250",
       "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -76,6 +130,30 @@
     },
     {
       "key": {
+        "uuid": "fded9a3d_a0771ea7",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Why? Without, I don\u0027t see how these variables end up in subshells.",
+      "parentUuid": "0ba64d25_91077c9b",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 6
+      },
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3c22f8c6_6708711a",
         "filename": "Makefile",
         "patchSetId": 1
@@ -87,6 +165,24 @@
       "writtenOn": "2018-03-02T16:30:51Z",
       "side": 1,
       "message": "update using ${IMAGE}",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "00a5be8c_35dd0a0e",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c22f8c6_6708711a",
       "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -110,6 +206,24 @@
     },
     {
       "key": {
+        "uuid": "6453ae7e_4fd70cc5",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "38b27437_67c610c0",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b432f05a_f2bcfb2d",
         "filename": "Makefile",
         "patchSetId": 1
@@ -127,6 +241,24 @@
     },
     {
       "key": {
+        "uuid": "3c204b6f_95403f44",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b432f05a_f2bcfb2d",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "382faf31_e9d3fe78",
         "filename": "images/pegleg/Dockerfile",
         "patchSetId": 1
@@ -138,6 +270,30 @@
       "writtenOn": "2018-03-02T10:47:14Z",
       "side": 1,
       "message": "Do we need 3.6 for Pegleg?",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 15
+      },
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "36febdbb_2848938d",
+        "filename": "images/pegleg/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "I\u0027m not sure, it was using 3.6 prior to this change.",
+      "parentUuid": "382faf31_e9d3fe78",
       "range": {
         "startLine": 1,
         "startChar": 12,
@@ -173,6 +329,30 @@
     },
     {
       "key": {
+        "uuid": "d3a1ec51_0cbeada6",
+        "filename": "src/bin/pegleg/tox.ini",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "331694fe_9888191e",
+      "range": {
+        "startLine": 5,
+        "startChar": 11,
+        "endLine": 5,
+        "endChar": 20
+      },
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "45df3279_9c94aad8",
         "filename": "tools/pegleg.sh",
         "patchSetId": 1
@@ -184,6 +364,24 @@
       "writtenOn": "2018-03-02T16:52:11Z",
       "side": 1,
       "message": "please update to use the IMAGE variable",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "146b596e_c2dba936",
+        "filename": "tools/pegleg.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-02T18:43:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "45df3279_9c94aad8",
       "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
