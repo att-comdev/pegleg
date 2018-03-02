@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b69e8845_eed57198",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-02T22:03:41Z",
+      "side": 1,
+      "message": "enabling",
+      "range": {
+        "startLine": 10,
+        "startChar": 38,
+        "endLine": 10,
+        "endChar": 47
+      },
+      "revId": "085e08e73b0993bf3408a0da17c8ee093d513781",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
