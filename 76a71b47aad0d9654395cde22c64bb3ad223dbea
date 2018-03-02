@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ba64d25_91077c9b",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-02T10:47:14Z",
+      "side": 1,
+      "message": "This should be removed.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 6
+      },
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "382faf31_e9d3fe78",
+        "filename": "images/pegleg/Dockerfile",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-02T10:47:14Z",
+      "side": 1,
+      "message": "Do we need 3.6 for Pegleg?",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 15
+      },
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "331694fe_9888191e",
+        "filename": "src/bin/pegleg/tox.ini",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-02T10:47:14Z",
+      "side": 1,
+      "message": "Could also set this to python3 which I think Prom recently did, particularly if you want this to use python3.6 judging by the Dockerfile.",
+      "range": {
+        "startLine": 5,
+        "startChar": 11,
+        "endLine": 5,
+        "endChar": 20
+      },
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
