@@ -2,6 +2,57 @@
   "comments": [
     {
       "key": {
+        "uuid": "8c790f10_9b4f6d34",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011831
+      },
+      "writtenOn": "2018-03-02T16:30:51Z",
+      "side": 1,
+      "message": "IMAGE_NAME  (generic to all att-comdev)",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dc08726c_97890875",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011831
+      },
+      "writtenOn": "2018-03-02T16:30:51Z",
+      "side": 1,
+      "message": "We need to use the same variables across att-comdev\nDOCKER_REGISTRY        ?\u003d ${DOCKER_REGISTRY}",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c20c19ad_87b48250",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011831
+      },
+      "writtenOn": "2018-03-02T16:30:51Z",
+      "side": 1,
+      "message": "IMAGE                      ?\u003d ${DOCKER_REGISTRY}/${IMAGE_PREFIX}/${IMAGE_NAME}:${IMAGE_TAG}",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0ba64d25_91077c9b",
         "filename": "Makefile",
         "patchSetId": 1
@@ -19,6 +70,57 @@
         "endLine": 25,
         "endChar": 6
       },
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3c22f8c6_6708711a",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1011831
+      },
+      "writtenOn": "2018-03-02T16:30:51Z",
+      "side": 1,
+      "message": "update using ${IMAGE}",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "38b27437_67c610c0",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011831
+      },
+      "writtenOn": "2018-03-02T16:30:51Z",
+      "side": 1,
+      "message": "update using ${IMAGE}",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b432f05a_f2bcfb2d",
+        "filename": "Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1011831
+      },
+      "writtenOn": "2018-03-02T16:30:51Z",
+      "side": 1,
+      "message": "update using ${IMAGE}",
       "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
