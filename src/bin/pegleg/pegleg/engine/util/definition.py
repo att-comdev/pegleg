@@ -1,5 +1,7 @@
-from . import files
 import click
+
+from pegleg import config
+from . import files
 
 __all__ = [
     'create',
@@ -31,19 +33,21 @@ def create(*, site_name, site_type, revision):
     files.dump(path(site_name), definition)
 
 
-def load(site):
-    return files.slurp(path(site))
+def load(site, primary_repo_base=None):
+    return files.slurp(path(site, primary_repo_base))
 
 
-def load_as_params(site_name):
-    definition = load(site_name)
+def load_as_params(site_name, primary_repo_base=None):
+    definition = load(site_name, primary_repo_base)
     params = definition.get('data', {})
     params['site_name'] = site_name
     return params
 
 
-def path(site_name):
-    return 'site/%s/site-definition.yaml' % site_name
+def path(site_name, primary_repo_base=None):
+    if not primary_repo_base:
+        primary_repo_base = config.get_primary_repo()
+    return '%s/site/%s/site-definition.yaml' % (primary_repo_base, site_name)
 
 
 def pluck(site_definition, key):
@@ -56,7 +60,7 @@ def pluck(site_definition, key):
                                                                  site_name, e))
 
 
-def site_files(site_name):
+def site_files(site_name, primary_repo_base=None, aux_repos=None):
     params = load_as_params(site_name)
     for filename in files.search(files.directories_for(**params)):
         yield filename

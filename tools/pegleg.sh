@@ -8,15 +8,17 @@ realpath() {
 
 SCRIPT_DIR=$(realpath "$(dirname "${0}")")
 SOURCE_DIR=${SCRIPT_DIR}/pegleg
-if [ -d "$PWD/global" ]; then
-  WORKSPACE="$PWD"
-else
-  WORKSPACE=$(realpath "${SCRIPT_DIR}/..")
+if [ -z "${WORKSPACE}" ]; then
+  WORKSPACE="/"
 fi
 
 IMAGE_PEGLEG=${IMAGE_PEGLEG:-quay.io/attcomdev/pegleg:latest}
 
+echo
+echo "== NOTE: Workspace $WORKSPACE  is available as /workspace in container context =="
+echo
+
 docker run --rm -t \
-    -v "${WORKSPACE}:/var/pegleg" \
+    -v "${WORKSPACE}:/workspace" \
     "${IMAGE_PEGLEG}" \
     pegleg "${@}"

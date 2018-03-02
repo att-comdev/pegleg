@@ -1,4 +1,6 @@
 from . import engine
+from pegleg import config
+
 import click
 import logging
 import sys
@@ -13,14 +15,13 @@ CONTEXT_SETTINGS = {
 
 
 @click.group(context_settings=CONTEXT_SETTINGS)
-@click.pass_context
 @click.option(
     '-v',
     '--verbose',
     is_flag=bool,
     default=False,
     help='Enable debug logging')
-def main(ctx, *, verbose):
+def main(*, verbose):
     if verbose:
         log_level = logging.DEBUG
     else:
@@ -29,8 +30,22 @@ def main(ctx, *, verbose):
 
 
 @main.group(help='Commands related to sites')
-def site():
-    pass
+@click.option(
+    '-p',
+    '--primary',
+    'primary_repo',
+    required=True,
+    help=
+    'Path to the root of the primary (containing site_definition.yaml) repo.')
+@click.option(
+    '-a',
+    '--auxiliary',
+    'aux_repo',
+    multiple=True,
+    help='Path to the root of a auxiliary repo.')
+def site(primary_repo, aux_repo):
+    config.set_primary_repo(primary_repo)
+    config.set_auxiliary_repo_list(aux_repo or [])
 
 
 @site.command(help='Output complete config for one site')
@@ -161,5 +176,24 @@ def site_type(*, revision, site_type):
 
 @LINT_OPTION
 @main.command(help='Sanity checks for repository content')
-def lint(*, fail_on_missing_sub_src):
-    engine.lint.full(fail_on_missing_sub_src)
+@click.option(
+    '-p',
+    '--primary',
+    'primary_repo',
+    required=True,
+    help=
+    'Path to the root of the primary (containing site_definition.yaml) repo.')
+@click.option(
+    '-a',
+    '--auxiliary',
+    'aux_repo',
+    multiple=True,
+    help='Path to the root of a auxiliary repo.')
+def lint(*, fail_on_missing_sub_src, primary_repo, aux_repo):
+    config.set_primary_repo(primary_repo)
+    config.set_auxiliary_repo_list(aux_repo or [])
+    warns = engine.lint.full(fail_on_missing_sub_src)
+    if warns:
+        click.echo("Linting passed, but produced some warnings.")
+        for w in warns:
+            click.echo(w)
