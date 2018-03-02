@@ -170,6 +170,23 @@
       "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45df3279_9c94aad8",
+        "filename": "tools/pegleg.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011593
+      },
+      "writtenOn": "2018-03-02T16:52:11Z",
+      "side": 1,
+      "message": "please update to use the IMAGE variable",
+      "revId": "76a71b47aad0d9654395cde22c64bb3ad223dbea",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
