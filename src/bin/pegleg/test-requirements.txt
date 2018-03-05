@@ -1,0 +1,11 @@
+# Testing
+pytest==3.2.1
+pytest-cov==2.5.1
+mock==2.0.0
+
+# Linting
+flake8==3.3.0
+
+# Documentation
+sphinx>=1.6.2
+sphinx_rtd_theme==0.2.4
