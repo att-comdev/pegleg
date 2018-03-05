@@ -18,12 +18,32 @@ DECKHAND_SCHEMAS = {
 }
 
 
-def full(fail_on_missing_sub_src=False):
+def full(fail_on_missing_sub_src=False, exclude_lint, warn_lint):
     errors = []
     warns = []
-    warns.extend(_verify_no_unexpected_files())
-    errors.extend(_verify_file_contents())
-    errors.extend(_verify_deckhand_render(fail_on_missing_sub_src))
+
+    messages = _verify_file_contents(exclude_lint)
+    # If policiy is cleartext and error is added this will put
+    # that particular message into the warns list and all other will
+    # be added to the error list
+    for msg in messages:
+        if 'P001' in warn_lint and 'storagePolicy: cleartext' in msg:
+            warns.append(msg)
+        else:
+            error.append(msg)
+
+    # Deckhand Renders completes without error
+    if 'P002' not in exclude_lint:
+        errors.extend(_verify_deckhand_render(fail_on_missing_sub_src))
+    if 'P002' in warn_lint:
+        warns.extend(_verify_deckhand_render(fail_on_missing_sub_src))
+
+    # All repos contain expected directories
+    if 'P003' not in exclude_lint:
+        errors.extend(_verify_no_unexpected_files())
+    if 'P003' in warn_lint:
+        warns.extend(_verify_no_unexpected_files())
+
     if errors:
         raise click.ClickException('\n'.join(['Linting failed:'] + errors))
     return warns
@@ -51,16 +71,16 @@ def _verify_no_unexpected_files():
     return errors
 
 
-def _verify_file_contents():
+def _verify_file_contents(exclude_lint):
     schemas = _load_schemas()
 
     errors = []
     for filename in util.files.all():
-        errors.extend(_verify_single_file(filename, schemas))
+        errors.extend(_verify_single_file(filename, schemas, exclude_lint))
     return errors
 
 
-def _verify_single_file(filename, schemas):
+def _verify_single_file(filename, schemas, exclude_lint):
     errors = []
     LOG.debug("Validating file %s." % filename)
     with open(filename) as f:
@@ -71,7 +91,8 @@ def _verify_single_file(filename, schemas):
         try:
             documents = yaml.safe_load_all(f)
             for document in documents:
-                errors.extend(_verify_document(document, schemas, filename))
+                errors.extend(_verify_document(document, schemas, filename,
+                              exclude_lint))
         except Exception as e:
             errors.append('%s is not valid yaml: %s' % (filename, e))
 
@@ -86,7 +107,7 @@ MANDATORY_ENCRYPTED_TYPES = {
 }
 
 
-def _verify_document(document, schemas, filename):
+def _verify_document(document, schemas, filename, exclude_lint):
     name = ':'.join([
         document.get('schema', ''),
         document.get('metadata', {}).get('name', '')
@@ -103,7 +124,10 @@ def _verify_document(document, schemas, filename):
     # "storagePolicy: encrypted".
     if document.get('schema') in MANDATORY_ENCRYPTED_TYPES:
         storage_policy = document.get('metadata', {}).get('storagePolicy')
-        if storage_policy != 'encrypted':
+        # Expected sensitive data using policy 'cleartext'
+        if (storage_policy != 'encrypted' and
+            storagePolicy is 'cleartext' and
+            'P001' not in exclude_lint)):
             errors.append('%s (document %s) is a secret, but has unexpected '
                           'storagePolicy: "%s"' % (filename, name,
                                                    storage_policy))

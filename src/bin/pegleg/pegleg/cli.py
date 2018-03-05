@@ -190,10 +190,25 @@ def site_type(*, revision, site_type):
     'aux_repo',
     multiple=True,
     help='Path to the root of a auxiliary repo.')
-def lint(*, fail_on_missing_sub_src, primary_repo, aux_repo):
+@click.option(
+    '-x',
+    '--exclude',
+    'exclude_lint',
+    multiple=True,
+    help='Exclude linting policy.'
+)
+@click.option(
+    '-w',
+    '--warn',
+    'warn_lint',
+    multiple=True,
+    help='Warn if linting policy fails.'
+)
+def lint(*, fail_on_missing_sub_src, primary_repo, aux_repo,
+         exclude_lint, warn_lint):
     config.set_primary_repo(primary_repo)
     config.set_auxiliary_repo_list(aux_repo or [])
-    warns = engine.lint.full(fail_on_missing_sub_src)
+    warns = engine.lint.full(fail_on_missing_sub_src, exclude_lint, warn_lint)
     if warns:
         click.echo("Linting passed, but produced some warnings.")
         for w in warns:
