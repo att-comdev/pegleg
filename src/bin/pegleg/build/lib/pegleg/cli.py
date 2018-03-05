@@ -1,4 +1,4 @@
-from . import engine
+from pegleg import engine
 from pegleg import config
 
 import click
@@ -194,16 +194,16 @@ def site_type(*, revision, site_type):
     '-x',
     '--exclude',
     'exclude_lint',
-    multiple=True,
-    help='Exclude linting policy.')
+    help='Exclude linting policy.'
+)
 @click.option(
     '-w',
     '--warn',
     'warn_lint',
-    multiple=True,
-    help='Warn if linting policy fails.')
-def lint(*, fail_on_missing_sub_src, primary_repo, aux_repo, exclude_lint,
-         warn_lint):
+    help='Warn if linting policy fails.'
+)
+def lint(*, fail_on_missing_sub_src, primary_repo, aux_repo,
+         exclude_lint, warn_lint):
     config.set_primary_repo(primary_repo)
     config.set_auxiliary_repo_list(aux_repo or [])
     warns = engine.lint.full(fail_on_missing_sub_src, exclude_lint, warn_lint)
