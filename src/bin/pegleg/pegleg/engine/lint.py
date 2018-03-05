@@ -4,8 +4,16 @@ import os
 import pkg_resources
 import yaml
 
-from pegleg.engine import util
 from pegleg import config
+from pegleg.engine import util
+
+ENABLE_WARN_FLAG_1 = 'P001'
+ENABLE_WARN_FLAG_2 = 'P002'
+ENABLE_WARN_FLAG_3 = 'P003'
+
+DISABLE_LINT_FLAG_1 = 'P001'
+DISABLE_LINT_FLAG_2 = 'P002'
+DISABLE_LINT_FLAG_3 = 'P003'
 
 __all__ = ['full']
 
@@ -18,12 +26,32 @@ DECKHAND_SCHEMAS = {
 }
 
 
-def full(fail_on_missing_sub_src=False):
+def full(fail_on_missing_sub_src=False, exclude_lint=None, warn_lint=None):
     errors = []
     warns = []
-    warns.extend(_verify_no_unexpected_files())
-    errors.extend(_verify_file_contents())
-    errors.extend(_verify_deckhand_render(fail_on_missing_sub_src))
+
+    messages = _verify_file_contents(exclude_lint)
+    # If policy is cleartext and error is added this will put
+    # that particular message into the warns list and all other will
+    # be added to the error list if ENABLE_WARN_FLAG_1
+    for msg in messages:
+        if ENABLE_WARN_FLAG_1 in warn_lint and 'cleartext' in msg:
+            warns.append(msg)
+        else:
+            errors.append(msg)
+
+    # Deckhand Rendering completes without error
+    if ENABLE_WARN_FLAG_2 in warn_lint:
+        warns.extend(_verify_deckhand_render(fail_on_missing_sub_src))
+    elif DISABLE_LINT_FLAG_2 not in exclude_lint:
+        errors.extend(_verify_deckhand_render(fail_on_missing_sub_src))
+
+    # All repos contain expected directories
+    if ENABLE_WARN_FLAG_3 in warn_lint:
+        warns.extend(_verify_no_unexpected_files())
+    elif DISABLE_LINT_FLAG_3 not in exclude_lint:
+        errors.extend(_verify_no_unexpected_files())
+
     if errors:
         raise click.ClickException('\n'.join(['Linting failed:'] + errors))
     return warns
@@ -51,16 +79,16 @@ def _verify_no_unexpected_files():
     return errors
 
 
-def _verify_file_contents():
+def _verify_file_contents(exclude_lint):
     schemas = _load_schemas()
 
     errors = []
     for filename in util.files.all():
-        errors.extend(_verify_single_file(filename, schemas))
+        errors.extend(_verify_single_file(filename, schemas, exclude_lint))
     return errors
 
 
-def _verify_single_file(filename, schemas):
+def _verify_single_file(filename, schemas, exclude_lint):
     errors = []
     LOG.debug("Validating file %s." % filename)
     with open(filename) as f:
@@ -71,7 +99,9 @@ def _verify_single_file(filename, schemas):
         try:
             documents = yaml.safe_load_all(f)
             for document in documents:
-                errors.extend(_verify_document(document, schemas, filename))
+                errors.extend(
+                    _verify_document(document, schemas, filename,
+                                     exclude_lint))
         except Exception as e:
             errors.append('%s is not valid yaml: %s' % (filename, e))
 
@@ -86,7 +116,7 @@ MANDATORY_ENCRYPTED_TYPES = {
 }
 
 
-def _verify_document(document, schemas, filename):
+def _verify_document(document, schemas, filename, exclude_lint):
     name = ':'.join([
         document.get('schema', ''),
         document.get('metadata', {}).get('name', '')
@@ -103,7 +133,9 @@ def _verify_document(document, schemas, filename):
     # "storagePolicy: encrypted".
     if document.get('schema') in MANDATORY_ENCRYPTED_TYPES:
         storage_policy = document.get('metadata', {}).get('storagePolicy')
-        if storage_policy != 'encrypted':
+        # Expected sensitive data using policy 'cleartext'
+        if (storage_policy != 'encrypted' and storage_policy is 'cleartext'
+                and DISABLE_LINT_FLAG_1 not in exclude_lint):
             errors.append('%s (document %s) is a secret, but has unexpected '
                           'storagePolicy: "%s"' % (filename, name,
                                                    storage_policy))
