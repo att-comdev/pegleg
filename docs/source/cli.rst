@@ -1,0 +1,102 @@
+..
+      Copyright 2018 AT&T Intellectual Property.
+      All Rights Reserved.
+
+      Licensed under the Apache License, Version 2.0 (the "License"); you may
+      not use this file except in compliance with the License. You may obtain
+      a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+      Unless required by applicable law or agreed to in writing, software
+      distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+      WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+      License for the specific language governing permissions and limitations
+      under the License.
+
+Pegleg CLI
+==========
+
+The Pegleg CLI is used in conjunction with the script located in pegleg/tools
+called pegleg.sh.
+::
+    $WORKSPACE = Location of the folder that holds the repository containing
+    the site definition.
+
+    $IMAGE = Location of pegleg docker image.
+
+To run:
+~~~~~~~
+
+./pegleg.sh <command> <options>
+
+
+CLI Options
+-----------
+
+\ -v / --verbose
+Enable debug logging.
+
+Site
+~~~~
+Commands related to sites.
+
+\-p / --primary
+Path to the root of the primary (containing site_definition.yaml) repo.
+(Required).
+
+\ -a / --auxiliary
+Path to the root of a auxiliary repo.
+
+Collect
+~~~~~~~
+Output complete config for one site
+
+\-s / --save-location
+Where to output.
+
+Impacted
+~~~~~~~~
+Find sites impacted by changed files.
+
+\ -i / --input
+List of impacted files
+
+\ -o / --output
+
+Lint
+~~~~
+Sanity checks for repository content.
+
+::
+    ./pegleg.sh -p <primary_repo> -a <auxiliary_repo>
+    -f -x <lint_code> -w <lint_code>
+
+    \ Example
+    ./pegleg.sh lint -p /workspace/site-repo -a /workspace/secondary-repo
+    -x P001 -x P002 -w P003
+
+\-p / --primary
+Path to the root of the primary (containing site_definition.yaml) repo.
+(Required).
+
+\ -a / --auxiliary
+Path to the root of a auxiliary repo.
+
+\ -f / --fail-on-missing-sub-src
+Raise deckhand exception on missing substitution sources. Defaults to True.
+
+\ -x <code>
+Will excluded the specified lint option.
+
+\ -w <code>
+Will warn of lint failures from the specified lint options.
+
+::
+    If you expect certain lint failures, then those lint options can be
+    excluded or you can choose to be warned about those failures using the
+    codes below.
+
+    P001 - Policy is cleartext and sensitive data is expected.
+    P002 - Deckhand Renders completes without error.
+    P003 - All repos contain expected directories.
