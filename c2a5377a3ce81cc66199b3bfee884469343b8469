@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "41d83752_c036dcfb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T16:50:23Z",
+      "side": 1,
+      "message": "which",
+      "range": {
+        "startLine": 11,
+        "startChar": 48,
+        "endLine": 11,
+        "endChar": 52
+      },
+      "revId": "c2a5377a3ce81cc66199b3bfee884469343b8469",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5c13c70_77e9a554",
+        "filename": "src/bin/pegleg/pegleg/cli.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T16:50:23Z",
+      "side": 1,
+      "message": "an",
+      "range": {
+        "startLine": 45,
+        "startChar": 30,
+        "endLine": 45,
+        "endChar": 31
+      },
+      "revId": "c2a5377a3ce81cc66199b3bfee884469343b8469",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6ef27047_6b2aa20c",
+        "filename": "src/bin/pegleg/pegleg/cli.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T16:50:23Z",
+      "side": 1,
+      "message": "an",
+      "range": {
+        "startLine": 192,
+        "startChar": 30,
+        "endLine": 192,
+        "endChar": 31
+      },
+      "revId": "c2a5377a3ce81cc66199b3bfee884469343b8469",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f3325f54_c25b8ca6",
+        "filename": "src/bin/pegleg/pegleg/cli.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T16:50:23Z",
+      "side": 1,
+      "message": "You could just add default\u003d[] to L192 above probably",
+      "range": {
+        "startLine": 195,
+        "startChar": 47,
+        "endLine": 195,
+        "endChar": 50
+      },
+      "revId": "c2a5377a3ce81cc66199b3bfee884469343b8469",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7487809e_188f8019",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T16:50:23Z",
+      "side": 1,
+      "message": "_verify_no_unexpected_files returns errors, not warnings, but it looks as though they might actually be in fact warnings. I would rename errors on L42 below to warns to make it clearer.",
+      "range": {
+        "startLine": 24,
+        "startChar": 4,
+        "endLine": 24,
+        "endChar": 47
+      },
+      "revId": "c2a5377a3ce81cc66199b3bfee884469343b8469",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e581e50e_d79a2823",
+        "filename": "src/bin/pegleg/pegleg/engine/site.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T16:50:23Z",
+      "side": 1,
+      "message": "This message isn\u0027t clear and should probably say you\u0027re writing filename content to os.path.join(save_location, repo_name + \".yaml\")",
+      "range": {
+        "startLine": 24,
+        "startChar": 11,
+        "endLine": 25,
+        "endChar": 72
+      },
+      "revId": "c2a5377a3ce81cc66199b3bfee884469343b8469",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6302f74c_8a1a05c7",
+        "filename": "src/bin/pegleg/pegleg/engine/util/files.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T16:50:23Z",
+      "side": 1,
+      "message": "directories_for_each_repo?",
+      "range": {
+        "startLine": 107,
+        "startChar": 4,
+        "endLine": 107,
+        "endChar": 27
+      },
+      "revId": "c2a5377a3ce81cc66199b3bfee884469343b8469",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
