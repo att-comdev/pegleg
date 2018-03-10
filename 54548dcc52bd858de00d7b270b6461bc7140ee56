@@ -68,6 +68,52 @@
       "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e3bcf03e_249f4ae4",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1008770
+      },
+      "writtenOn": "2018-03-10T20:44:18Z",
+      "side": 1,
+      "message": "If deckhand renders without error, it is a failure code?",
+      "range": {
+        "startLine": 101,
+        "startChar": 3,
+        "endLine": 101,
+        "endChar": 52
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e4f677e6_94fe9479",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1008770
+      },
+      "writtenOn": "2018-03-10T20:44:18Z",
+      "side": 1,
+      "message": "Ditto.  If all repos contain expected directories, is that a failure code?  If these are in fact warnings/failure message, I think they should be rephrased.",
+      "range": {
+        "startLine": 102,
+        "startChar": 4,
+        "endLine": 102,
+        "endChar": 50
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
