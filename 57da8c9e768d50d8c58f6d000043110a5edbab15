@@ -1,0 +1,182 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a20c0550_58b0b43c",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "This should be done like this:   \n\n    ...exclude_list\u003dNone, warn_list\u003dNone):\n    exclude_list \u003d exclude_list or []\n    warn_list \u003d warn_list or []\n\nBecause it doesn\u0027t do what you think it does. Example:\n\n\u003e\u003e\u003e def foo(arg, a\u003d[]):\n...     a.append(arg)\n...     print(a)\n... \n\u003e\u003e\u003e foo(\u0027bar\u0027)\n[\u0027bar\u0027]\n\u003e\u003e\u003e foo(\u0027foo\u0027)\n[\u0027bar\u0027, \u0027foo\u0027]",
+      "range": {
+        "startLine": 21,
+        "startChar": 40,
+        "endLine": 21,
+        "endChar": 71
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9b826afb_64c76d50",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "policy",
+      "range": {
+        "startLine": 26,
+        "startChar": 9,
+        "endLine": 26,
+        "endChar": 16
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "80131ba2_e04f7b1a",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "Constants would be nice to make the code here more readable. For example:\n\n    ENABLE_WARN_FLAG \u003d \u0027P001\u0027\n    ...\n    if ENABLE_WARN_FLAG in warn_lint...",
+      "range": {
+        "startLine": 30,
+        "startChar": 11,
+        "endLine": 30,
+        "endChar": 17
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e19c9eb5_0dd6e8e7",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "Seems likes this should be:\n\n    elif \u0027P001\u0027 not in exclude_lint:",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 13
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "161ae46f_4676e0cf",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "rendering",
+      "range": {
+        "startLine": 35,
+        "startChar": 15,
+        "endLine": 35,
+        "endChar": 22
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "80912ac4_98b0347f",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "This seems unintuitive because excluding a lint check implies that you skip all lint checks, including those that warn. So, if this is the intended behavior of exclude_lint, then I would rephrase the help to be: \"Excludes lint checks, but warnings are still issued; -w takes priority over -x.\"",
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fc689d76_c5956293",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "It would be nice to say which lint checks failed. For example:\n\n    # Make similar changes above as well.\n    ...\n    elif \u0027P003\u0027 not in exclude_lint:\n        errors.extend([(\u0027P003\u0027, x) for x in _verify_no_unexpected_files()])\n\n    ...\n        if errors:\n        raise click.ClickException(\u0027\\n\u0027.join([\u0027Linting failed:\u0027] + [\"%s: %s\" % (e[0], e[1]) for e in errors]))",
+      "range": {
+        "startLine": 48,
+        "startChar": 67,
+        "endLine": 48,
+        "endChar": 73
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e383bc8c_1ffe7d0b",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:39:36Z",
+      "side": 1,
+      "message": "Should this be here?",
+      "range": {
+        "startLine": 126,
+        "startChar": 4,
+        "endLine": 126,
+        "endChar": 61
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
