@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0d24788b_d70b3db3",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:46:00Z",
+      "side": 1,
+      "message": "Deckhand",
+      "range": {
+        "startLine": 87,
+        "startChar": 6,
+        "endLine": 87,
+        "endChar": 14
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "00002018_d211b351",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:46:00Z",
+      "side": 1,
+      "message": "Which takes priority? -w or -x?",
+      "range": {
+        "startLine": 90,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 40
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bd47f2d8_398d329e",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-10T09:46:00Z",
+      "side": 1,
+      "message": "rendering",
+      "range": {
+        "startLine": 101,
+        "startChar": 20,
+        "endLine": 101,
+        "endChar": 27
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
