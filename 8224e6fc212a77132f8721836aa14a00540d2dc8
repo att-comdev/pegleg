@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a998eda5_cffad97e",
+        "filename": "src/bin/pegleg/pegleg/engine/site.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1013049
+      },
+      "writtenOn": "2018-03-12T20:44:52Z",
+      "side": 1,
+      "message": "\".yaml\" with double quotes is used three lines above.",
+      "range": {
+        "startLine": 26,
+        "startChar": 63,
+        "endLine": 26,
+        "endChar": 70
+      },
+      "revId": "8224e6fc212a77132f8721836aa14a00540d2dc8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
