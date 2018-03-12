@@ -1,0 +1,209 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6ab72aef_5e019389",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "The idea behind the constants is to have a self-describing variable name for an otherwise indecipherable code of \u0027P001\u0027.\n\nSo I\u0027d name it to something like: \n\n    SCHEMA_STORAGE_POLICY_MISMATCH_FLAG\n\nIf I\u0027m reading correctly \u0027P001\u0027 is this:\n\n    P001 - Policy is cleartext and sensitive data is expected.\n\nHowever, that itself seems to be slightly misleading, and I think it\u0027s trying to say:\n\n    P001 - Document has storagePolicy cleartext (expected is encrypted) because its schema is a mandatory encrypted type.\n\n    Where manadatory encrypted schema type is one of:\n\n    * deckhand/CertificateAuthorityKey/v1\n    * deckhand/CertificateKey/v1\n    * deckhand/Passphrase/v1\n    * deckhand/PrivateKey/v1",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2660f439_e0d849b8",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "These flags are identical to the ones above so should be removed.",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0b97efc5_ae2612e6",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "See L128 comment",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "01a72c9e_541f6c2f",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "See L128 comment",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "769b74fe_e4455b4f",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "This is going to be a rather long comment but I think it\u0027ll help to simplify some things:\n\n1) No need to pass exclude_lint all the way down here (can just remove exclude_lint from L119, L91, L82, etc.)\n2) We can do this on L137 instead:\n\n    if storage_policy !\u003d \u0027encrypted:\n       ...\n\n3) That means this condition will remain the same as originally\n4) On L139, however, we can do this:\n\n    errors.append((\u0027P001\u0027, \u003csame_message_as_right_now\u003e)\n\nWhich can be written as:\n\n    errors.append((SCHEMA_STORAGE_POLICY_MISMATCH_FLAG, \u003csame_message_as_right_now\u003e)\n\n5) Back on L33-40ish, we can now just do:\n\n    messages \u003d _verify_file_contents()\n    # If policy is cleartext and error is added this will put\n    # that particular message into the warns list and all other will\n    # be added to the error list if ENABLE_WARN_FLAG_1\n    for msg in messages:\n        if SCHEMA_STORAGE_POLICY_MISMATCH_FLAG in warn_lint and SCHEMA_STORAGE_POLICY_MISMATCH_FLAG in msg[0]:\n            warns.append(msg)\n        else:\n            errors.append(msg)",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "43b4ce9d_ba2ec1a3",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "May suggestion of adding the code (\u0027P001\u0027 or \u0027P002\u0027, etc.) will have to cascade everywhere else, like here on L128 as well. If there is no lint code for it yet, I guess we can just add empty string or \u0027N/A\u0027 or something. This is for consistency so we don\u0027t fail when indexing later and some of the error messages aren\u0027t tuples.",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "29e1b19c_243e2133",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "This piece can be removed as if storage_policy !\u003d \u0027encrypted\u0027 the only other option is \u0027cleartext\u0027 so this is redundant.",
+      "range": {
+        "startLine": 137,
+        "startChar": 41,
+        "endLine": 137,
+        "endChar": 75
+      },
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef38c587_8414cdc7",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "See L128 comment",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6b299f59_159aafc8",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "See L128 comment",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "963193e1_cd90c80d",
+        "filename": "src/bin/pegleg/tests/unit/test_selectable_linitng.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "Should use\n\n    with pytest.raises(click.ClickException) as expected_exc:\n        results \u003d lint.full(...)\n    # do current assertions against expected_exc",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 12
+      },
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d3bf0000_8a7c8121",
+        "filename": "src/bin/pegleg/tox.ini",
+        "patchSetId": 7
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T17:03:02Z",
+      "side": 1,
+      "message": "WS",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 4
+      },
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
