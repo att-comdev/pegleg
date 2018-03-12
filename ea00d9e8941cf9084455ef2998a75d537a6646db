@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0d05bc91_11554c6a",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T18:11:03Z",
+      "side": 1,
+      "message": "yet its\n\n^ That should be clearer + fix typo",
+      "range": {
+        "startLine": 100,
+        "startChar": 72,
+        "endLine": 101,
+        "endChar": 8
+      },
+      "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
