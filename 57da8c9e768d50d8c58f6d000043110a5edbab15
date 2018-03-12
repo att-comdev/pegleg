@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "a23454c1_2b574135",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:50:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "80131ba2_e04f7b1a",
+      "range": {
+        "startLine": 30,
+        "startChar": 11,
+        "endLine": 30,
+        "endChar": 17
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e19c9eb5_0dd6e8e7",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 4
@@ -254,6 +278,24 @@
     },
     {
       "key": {
+        "uuid": "fc40e91e_dbfbff6b",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:50:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "80912ac4_98b0347f",
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fc689d76_c5956293",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 4
@@ -265,6 +307,30 @@
       "writtenOn": "2018-03-10T09:39:36Z",
       "side": 1,
       "message": "It would be nice to say which lint checks failed. For example:\n\n    # Make similar changes above as well.\n    ...\n    elif \u0027P003\u0027 not in exclude_lint:\n        errors.extend([(\u0027P003\u0027, x) for x in _verify_no_unexpected_files()])\n\n    ...\n        if errors:\n        raise click.ClickException(\u0027\\n\u0027.join([\u0027Linting failed:\u0027] + [\"%s: %s\" % (e[0], e[1]) for e in errors]))",
+      "range": {
+        "startLine": 48,
+        "startChar": 67,
+        "endLine": 48,
+        "endChar": 73
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "03ac0947_460fb6e6",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:50:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fc689d76_c5956293",
       "range": {
         "startLine": 48,
         "startChar": 67,
