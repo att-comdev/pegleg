@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff7fa685_84e56851",
+        "filename": "setup.cfg",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T18:41:33Z",
+      "side": 1,
+      "message": "Need to add summary here",
+      "revId": "e996e2cc2b86b5eb55cc05eeaf1fa8b3df393926",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
