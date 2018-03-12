@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "539df240_6f211faa",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done, also updated the documentation",
+      "parentUuid": "6ab72aef_5e019389",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2660f439_e0d849b8",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 7
@@ -30,6 +48,24 @@
       "writtenOn": "2018-03-12T17:03:02Z",
       "side": 1,
       "message": "These flags are identical to the ones above so should be removed.",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bedf4131_8ca9dc40",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2660f439_e0d849b8",
       "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "e6dcd142_9393503f",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0b97efc5_ae2612e6",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "01a72c9e_541f6c2f",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 7
@@ -64,6 +118,24 @@
       "writtenOn": "2018-03-12T17:03:02Z",
       "side": 1,
       "message": "See L128 comment",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f34b71ab_aa96a5d8",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "01a72c9e_541f6c2f",
       "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "5f22e670_1fb21361",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "769b74fe_e4455b4f",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "43b4ce9d_ba2ec1a3",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 7
@@ -98,6 +188,24 @@
       "writtenOn": "2018-03-12T17:03:02Z",
       "side": 1,
       "message": "May suggestion of adding the code (\u0027P001\u0027 or \u0027P002\u0027, etc.) will have to cascade everywhere else, like here on L128 as well. If there is no lint code for it yet, I guess we can just add empty string or \u0027N/A\u0027 or something. This is for consistency so we don\u0027t fail when indexing later and some of the error messages aren\u0027t tuples.",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7b550329_ff67a1b0",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "43b4ce9d_ba2ec1a3",
       "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -127,6 +235,30 @@
     },
     {
       "key": {
+        "uuid": "f6ec2595_cb2a44dd",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "29e1b19c_243e2133",
+      "range": {
+        "startLine": 137,
+        "startChar": 41,
+        "endLine": 137,
+        "endChar": 75
+      },
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ef38c587_8414cdc7",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 7
@@ -144,6 +276,24 @@
     },
     {
       "key": {
+        "uuid": "5309abef_1125969e",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ef38c587_8414cdc7",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6b299f59_159aafc8",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 7
@@ -155,6 +305,24 @@
       "writtenOn": "2018-03-12T17:03:02Z",
       "side": 1,
       "message": "See L128 comment",
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "36bc09ce_ee54ce45",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b299f59_159aafc8",
       "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -184,6 +352,30 @@
     },
     {
       "key": {
+        "uuid": "6d0e9558_40312a5e",
+        "filename": "src/bin/pegleg/tests/unit/test_selectable_linitng.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Thank you! This makes things a lot easier",
+      "parentUuid": "963193e1_cd90c80d",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 12
+      },
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d3bf0000_8a7c8121",
         "filename": "src/bin/pegleg/tox.ini",
         "patchSetId": 7
@@ -195,6 +387,30 @@
       "writtenOn": "2018-03-12T17:03:02Z",
       "side": 1,
       "message": "WS",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 4
+      },
+      "revId": "436f52f0533428c80167ea34872e6cd2ee23e76f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "87032d0b_056b6f26",
+        "filename": "src/bin/pegleg/tox.ini",
+        "patchSetId": 7
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:44:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3bf0000_8a7c8121",
       "range": {
         "startLine": 11,
         "startChar": 0,
