@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "51d72ef6_31e18084",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:05:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0d24788b_d70b3db3",
+      "range": {
+        "startLine": 87,
+        "startChar": 6,
+        "endLine": 87,
+        "endChar": 14
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "00002018_d211b351",
         "filename": "docs/source/cli.rst",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2018-03-10T09:46:00Z",
       "side": 1,
       "message": "Which takes priority? -w or -x?",
+      "range": {
+        "startLine": 90,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 40
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "180ba021_2854c28e",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:05:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "00002018_d211b351",
       "range": {
         "startLine": 90,
         "startChar": 0,
@@ -94,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "abd46f90_2d90841d",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:05:17Z",
+      "side": 1,
+      "message": "If the code P002 is used it is because they expect the Deckhand render to fail.",
+      "parentUuid": "e3bcf03e_249f4ae4",
+      "range": {
+        "startLine": 101,
+        "startChar": 3,
+        "endLine": 101,
+        "endChar": 52
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e4f677e6_94fe9479",
         "filename": "docs/source/cli.rst",
         "patchSetId": 1
@@ -105,6 +177,30 @@
       "writtenOn": "2018-03-10T20:44:18Z",
       "side": 1,
       "message": "Ditto.  If all repos contain expected directories, is that a failure code?  If these are in fact warnings/failure message, I think they should be rephrased.",
+      "range": {
+        "startLine": 102,
+        "startChar": 4,
+        "endLine": 102,
+        "endChar": 50
+      },
+      "revId": "54548dcc52bd858de00d7b270b6461bc7140ee56",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b103e2cd_99f4006a",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T18:05:17Z",
+      "side": 1,
+      "message": "No, these are the lint options. If you expect this option to fail you can exclude/warn it using P003 with the specified cli option.",
+      "parentUuid": "e4f677e6_94fe9479",
       "range": {
         "startLine": 102,
         "startChar": 4,
