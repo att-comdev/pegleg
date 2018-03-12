@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "1d517117_c3d57329",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T18:15:21Z",
+      "side": 1,
+      "message": "exclude",
+      "range": {
+        "startLine": 90,
+        "startChar": 5,
+        "endLine": 90,
+        "endChar": 13
+      },
+      "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0d05bc91_11554c6a",
         "filename": "docs/source/cli.rst",
         "patchSetId": 2
@@ -19,6 +42,23 @@
         "endLine": 101,
         "endChar": 8
       },
+      "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6fa7a576_87c3ac2a",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T18:15:21Z",
+      "side": 1,
+      "message": "I think a newline is needed after this to properly render list in sphinx",
       "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
