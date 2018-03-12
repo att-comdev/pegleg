@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "d10dd762_4a8883d0",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:25:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a20c0550_58b0b43c",
+      "range": {
+        "startLine": 21,
+        "startChar": 40,
+        "endLine": 21,
+        "endChar": 71
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9b826afb_64c76d50",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2018-03-10T09:39:36Z",
       "side": 1,
       "message": "policy",
+      "range": {
+        "startLine": 26,
+        "startChar": 9,
+        "endLine": 26,
+        "endChar": 16
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "770e5756_2fe5ac2f",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:25:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9b826afb_64c76d50",
       "range": {
         "startLine": 26,
         "startChar": 9,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "68e388ee_1646aa49",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:25:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "80131ba2_e04f7b1a",
+      "range": {
+        "startLine": 30,
+        "startChar": 11,
+        "endLine": 30,
+        "endChar": 17
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e19c9eb5_0dd6e8e7",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 4
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "035276c8_1d8ffec3",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:25:44Z",
+      "side": 1,
+      "message": "Because other errors can come from this function, I only want to add the singular error that talks about the cleartext issue. All others should be added to the errors list.And I only want to add it to the warn list if it is P001 and cleartext. If not that will get added to the error list as well.",
+      "parentUuid": "e19c9eb5_0dd6e8e7",
+      "range": {
+        "startLine": 32,
+        "startChar": 8,
+        "endLine": 32,
+        "endChar": 13
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "161ae46f_4676e0cf",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 4
@@ -105,6 +201,30 @@
       "writtenOn": "2018-03-10T09:39:36Z",
       "side": 1,
       "message": "rendering",
+      "range": {
+        "startLine": 35,
+        "startChar": 15,
+        "endLine": 35,
+        "endChar": 22
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "04d0fff5_58a5cd7d",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:25:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "161ae46f_4676e0cf",
       "range": {
         "startLine": 35,
         "startChar": 15,
@@ -168,6 +288,30 @@
       "writtenOn": "2018-03-10T09:39:36Z",
       "side": 1,
       "message": "Should this be here?",
+      "range": {
+        "startLine": 126,
+        "startChar": 4,
+        "endLine": 126,
+        "endChar": 61
+      },
+      "revId": "57da8c9e768d50d8c58f6d000043110a5edbab15",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d869c6a6_108bd83a",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-12T14:25:44Z",
+      "side": 1,
+      "message": "nope, nice catch",
+      "parentUuid": "e383bc8c_1ffe7d0b",
       "range": {
         "startLine": 126,
         "startChar": 4,
