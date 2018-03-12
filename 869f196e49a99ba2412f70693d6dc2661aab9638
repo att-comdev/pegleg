@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "05e3c9c3_e2b81ec2",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T22:07:52Z",
+      "side": 1,
+      "message": "nit: \u003d\u003d",
+      "range": {
+        "startLine": 35,
+        "startChar": 56,
+        "endLine": 35,
+        "endChar": 58
+      },
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9913e1cc_1be58bff",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T22:07:52Z",
+      "side": 1,
+      "message": "So there is one inconsistency here: I think here it\u0027s adding a tuple to warns and on L42 and L48 it\u0027s adding just the string. I think going with tuples in all places would be better.",
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f91b23ca_63777321",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T22:07:52Z",
+      "side": 1,
+      "message": "Right now I think there might be a CICD issue with running tox.ini in nested directories, so I don\u0027t think it\u0027s detecting this as a flake8 issue. But if we care about maintaining 79 line length this is too long.",
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c38c5140_3a7615a5",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T22:07:52Z",
+      "side": 1,
+      "message": "nit: Can we push this a little bit more to right so it lines up with string on top line?",
+      "range": {
+        "startLine": 146,
+        "startChar": 20,
+        "endLine": 146,
+        "endChar": 34
+      },
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "69951fc5_c995e3e7",
+        "filename": "src/bin/pegleg/test-requirements.txt",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-12T22:07:52Z",
+      "side": 1,
+      "message": "This is actually already included in docs/requirements.txt\n\nI agree it\u0027s confusing...",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 23
+      },
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
