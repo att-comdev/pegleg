@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "71b5872d_6bfbafd5",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-13T13:56:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "05e3c9c3_e2b81ec2",
+      "range": {
+        "startLine": 35,
+        "startChar": 56,
+        "endLine": 35,
+        "endChar": 58
+      },
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9913e1cc_1be58bff",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 9
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "1a5cb5b3_376aa686",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-13T13:56:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9913e1cc_1be58bff",
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f91b23ca_63777321",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 9
@@ -53,6 +95,24 @@
       "writtenOn": "2018-03-12T22:07:52Z",
       "side": 1,
       "message": "Right now I think there might be a CICD issue with running tox.ini in nested directories, so I don\u0027t think it\u0027s detecting this as a flake8 issue. But if we care about maintaining 79 line length this is too long.",
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dd384129_fc8beda1",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-13T13:56:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f91b23ca_63777321",
       "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -82,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "38b4e432_b6c47d59",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-13T13:56:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c38c5140_3a7615a5",
+      "range": {
+        "startLine": 146,
+        "startChar": 20,
+        "endLine": 146,
+        "endChar": 34
+      },
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "69951fc5_c995e3e7",
         "filename": "src/bin/pegleg/test-requirements.txt",
         "patchSetId": 9
@@ -93,6 +177,30 @@
       "writtenOn": "2018-03-12T22:07:52Z",
       "side": 1,
       "message": "This is actually already included in docs/requirements.txt\n\nI agree it\u0027s confusing...",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 23
+      },
+      "revId": "869f196e49a99ba2412f70693d6dc2661aab9638",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e20692ce_cc0b2763",
+        "filename": "src/bin/pegleg/test-requirements.txt",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-13T13:56:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69951fc5_c995e3e7",
       "range": {
         "startLine": 9,
         "startChar": 0,
