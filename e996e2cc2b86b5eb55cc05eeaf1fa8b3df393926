@@ -130,6 +130,24 @@
       "revId": "e996e2cc2b86b5eb55cc05eeaf1fa8b3df393926",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9e72693d_6fb02dc2",
+        "filename": "tox.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-14T04:21:49Z",
+      "side": 1,
+      "message": "Something like this might do the trick:\n\n    sphinx-build -b html docs/src docs/build -n -W -v",
+      "parentUuid": "2af2ea42_5d4b9dce",
+      "revId": "e996e2cc2b86b5eb55cc05eeaf1fa8b3df393926",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
