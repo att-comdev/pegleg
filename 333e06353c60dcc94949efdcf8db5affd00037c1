@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba9165e7_b4bee6f3",
+        "filename": "setup.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-14T15:53:54Z",
+      "side": 1,
+      "message": "This file is needed because tox -e docs calls pip install which in turn invokes python setup.py install -- in other words, at a minimum this file is needed.",
+      "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
