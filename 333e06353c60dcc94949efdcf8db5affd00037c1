@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "7b93d83c_554d487a",
+        "filename": "docs/source/authoring_strategy.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-14T18:18:34Z",
+      "side": 1,
+      "message": "Can we http://deckhand.readthedocs.io/en/latest/ instead?",
+      "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba9165e7_b4bee6f3",
         "filename": "setup.py",
         "patchSetId": 5
@@ -13,6 +30,24 @@
       "writtenOn": "2018-03-14T15:53:54Z",
       "side": 1,
       "message": "This file is needed because tox -e docs calls pip install which in turn invokes python setup.py install -- in other words, at a minimum this file is needed.",
+      "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b1a2c990_39454783",
+        "filename": "setup.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-03-14T18:18:34Z",
+      "side": 1,
+      "message": "I\u0027ve provided Krysta w/ a different pattern that doesn\u0027t require a pip install (as far as I know).",
+      "parentUuid": "ba9165e7_b4bee6f3",
       "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
