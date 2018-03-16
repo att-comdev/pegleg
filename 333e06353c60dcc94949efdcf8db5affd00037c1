@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "f1324c45_a1964236",
+        "filename": "docs/source/authoring_strategy.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-16T19:25:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7b93d83c_554d487a",
+      "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba9165e7_b4bee6f3",
         "filename": "setup.py",
         "patchSetId": 5
@@ -48,6 +66,24 @@
       "side": 1,
       "message": "I\u0027ve provided Krysta w/ a different pattern that doesn\u0027t require a pip install (as far as I know).",
       "parentUuid": "ba9165e7_b4bee6f3",
+      "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f246aabe_a4e6c679",
+        "filename": "setup.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-16T19:25:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b1a2c990_39454783",
       "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
