@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf52a32e_59880b26",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 6
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1008770
+      },
+      "writtenOn": "2018-03-17T00:45:00Z",
+      "side": 1,
+      "message": "mandatory",
+      "range": {
+        "startLine": 107,
+        "startChar": 10,
+        "endLine": 107,
+        "endChar": 20
+      },
+      "revId": "b08ca2c03f899efcce1708a3934241a9c1ffe125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
