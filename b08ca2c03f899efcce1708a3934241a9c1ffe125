@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "1e653a91_da017aef",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 6
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1011940
+      },
+      "writtenOn": "2018-03-17T00:51:19Z",
+      "side": 1,
+      "message": "is this supposed to say \"lint\" here?",
+      "range": {
+        "startLine": 75,
+        "startChar": 14,
+        "endLine": 75,
+        "endChar": 18
+      },
+      "revId": "b08ca2c03f899efcce1708a3934241a9c1ffe125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bf52a32e_59880b26",
         "filename": "docs/source/cli.rst",
         "patchSetId": 6
