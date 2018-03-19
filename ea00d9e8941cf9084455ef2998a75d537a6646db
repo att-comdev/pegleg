@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "dbc3e989_0ff861df",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1d517117_c3d57329",
+      "range": {
+        "startLine": 90,
+        "startChar": 5,
+        "endLine": 90,
+        "endChar": 13
+      },
+      "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0d05bc91_11554c6a",
         "filename": "docs/source/cli.rst",
         "patchSetId": 2
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "ef4ffb67_aa21091b",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0d05bc91_11554c6a",
+      "range": {
+        "startLine": 100,
+        "startChar": 72,
+        "endLine": 101,
+        "endChar": 8
+      },
+      "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6fa7a576_87c3ac2a",
         "filename": "docs/source/cli.rst",
         "patchSetId": 2
@@ -59,6 +107,24 @@
       "writtenOn": "2018-03-12T18:15:21Z",
       "side": 1,
       "message": "I think a newline is needed after this to properly render list in sphinx",
+      "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9b3e2714_7dce5c5c",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6fa7a576_87c3ac2a",
       "revId": "ea00d9e8941cf9084455ef2998a75d537a6646db",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
