@@ -49,8 +49,8 @@ These must be utilized for all data considered sensitive.
 Global Catalogue Documents
 --------------------------
 
-`Deckhand`_'s layering functionality can be utilized in several ways, but AIC
-site definitions will use a 'catalogue' approach. At the ``global`` layer
+`Deckhand`_'s layering functionality can be utilized in several ways, i.e site
+definitions. At the ``global`` layer
 there will be several documents providing different configurations for an
 object or service. Each of these will be abstract documents. They can be
 incorporated into a particular site definition by creating a concrete
