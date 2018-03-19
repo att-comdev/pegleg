@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "17e32f7e_b2b4cde5",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 6
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "yes",
+      "parentUuid": "1e653a91_da017aef",
+      "range": {
+        "startLine": 75,
+        "startChar": 14,
+        "endLine": 75,
+        "endChar": 18
+      },
+      "revId": "b08ca2c03f899efcce1708a3934241a9c1ffe125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bf52a32e_59880b26",
         "filename": "docs/source/cli.rst",
         "patchSetId": 6
@@ -36,6 +60,30 @@
       "writtenOn": "2018-03-17T00:45:00Z",
       "side": 1,
       "message": "mandatory",
+      "range": {
+        "startLine": 107,
+        "startChar": 10,
+        "endLine": 107,
+        "endChar": 20
+      },
+      "revId": "b08ca2c03f899efcce1708a3934241a9c1ffe125",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a4e756b_f31c787e",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 6
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf52a32e_59880b26",
       "range": {
         "startLine": 107,
         "startChar": 10,
