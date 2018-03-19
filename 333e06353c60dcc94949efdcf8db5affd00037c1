@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "eba582a4_eabf1b03",
+        "filename": "docs/source/authoring_strategy.rst",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7b93d83c_554d487a",
+      "revId": "333e06353c60dcc94949efdcf8db5affd00037c1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba9165e7_b4bee6f3",
         "filename": "setup.py",
         "patchSetId": 5
