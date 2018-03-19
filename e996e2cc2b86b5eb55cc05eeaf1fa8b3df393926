@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "8e6b8ef4_755e4999",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "772adfc8_00938ca4",
+      "range": {
+        "startLine": 25,
+        "startChar": 55,
+        "endLine": 25,
+        "endChar": 65
+      },
+      "revId": "e996e2cc2b86b5eb55cc05eeaf1fa8b3df393926",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4c0aae6f_5145691f",
         "filename": "docs/source/cli.rst",
         "patchSetId": 3
@@ -53,6 +77,30 @@
       "writtenOn": "2018-03-13T17:52:45Z",
       "side": 1,
       "message": "definition libraries.",
+      "range": {
+        "startLine": 26,
+        "startChar": 13,
+        "endLine": 26,
+        "endChar": 24
+      },
+      "revId": "e996e2cc2b86b5eb55cc05eeaf1fa8b3df393926",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "264ff8d1_a081920a",
+        "filename": "docs/source/cli.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1012247
+      },
+      "writtenOn": "2018-03-19T16:33:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4c0aae6f_5145691f",
       "range": {
         "startLine": 26,
         "startChar": 13,
