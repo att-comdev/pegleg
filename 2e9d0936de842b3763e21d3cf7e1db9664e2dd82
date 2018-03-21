@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f104b51b_a71e1a51",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-21T18:13:58Z",
+      "side": 1,
+      "message": "This should most certainly at least link to Deckhand as it\u0027s the front door for Deckhand.",
+      "revId": "2e9d0936de842b3763e21d3cf7e1db9664e2dd82",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a7e80281_d31d16eb",
+        "filename": "docs/source/getting_started.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-21T18:13:58Z",
+      "side": 1,
+      "message": "This should contain path: pegleg/src/bin/pegleg in front.\n\nYou might as well also run pip3 install -r pegleg/src/bin/pegleg/requirements.txt -r pegleg/src/bin/pegleg/test-requirements.txt\n\nAlthough I\u0027m surprised if there isn\u0027t a Make target for that already which will be a lot easier to run.",
+      "range": {
+        "startLine": 36,
+        "startChar": 21,
+        "endLine": 36,
+        "endChar": 37
+      },
+      "revId": "2e9d0936de842b3763e21d3cf7e1db9664e2dd82",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
