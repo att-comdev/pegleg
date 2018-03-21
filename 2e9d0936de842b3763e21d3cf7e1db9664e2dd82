@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "c0ad23e2_b009626c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-21T18:14:42Z",
+      "side": 1,
+      "message": "May we briefly elaborate and the updates? I.e. added getting started guide, fixed some documentation syntax issues, etc.",
+      "revId": "2e9d0936de842b3763e21d3cf7e1db9664e2dd82",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f104b51b_a71e1a51",
         "filename": "README.md",
         "patchSetId": 3
