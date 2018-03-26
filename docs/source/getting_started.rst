@@ -21,15 +21,24 @@ Getting Started
 What is Pegleg?
 ---------------
 
-Pegleg is document aggregator that provides early linting and validations for
-documents that can be consumed by UCP.
+Pegleg is document aggregator that provides early linting and validations via
+Deckhand_ for documents that can be consumed by UCP_.
 
 For more information on the documents that Pegleg works on see `Document Fundamentals`_.
 
 Basic Usage
 -----------
 
-Before using Pegleg, you must install the required packages in pegleg/src/bin/pegleg
+Before using Pegleg, you must:
+
+Clone the Pegleg repository
+
+.. code-block:: console
+
+    git clone https://github.com/att-comdev/pegleg
+
+
+and install the required packages in pegleg/src/bin/pegleg
 
 .. code-block:: console
 
@@ -41,3 +50,5 @@ information.
 
 .. _Document Fundamentals: https://pegleg.readthedocs.io/en/latest/authoring_strategy.html
 .. _CLI: https://pegleg.readthedocs.io/en/latest/cli.html
+.. _Deckhand: http://deckhand.readthedocs.io/en/latest/
+.. _UCP: https://github.com/att-comdev/ucp-integration
