@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "79177b64_c66accc4",
+        "filename": "docs/source/getting_started.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-26T23:59:08Z",
+      "side": 1,
+      "message": "a document",
+      "range": {
+        "startLine": 24,
+        "startChar": 10,
+        "endLine": 24,
+        "endChar": 18
+      },
+      "revId": "ee7bd61e8b804be2326225ccfb02d012a7073b0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca8df6d3_9859f825",
+        "filename": "docs/source/getting_started.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-26T23:59:08Z",
+      "side": 1,
+      "message": "It\u0027d be nice to elaborate on what aggregation means. E.g.: It aggregates all the documents in a repository, packing them into a single YAML file. This allows for operators to structure their site definitions in a maintainable directory layout, while providing them with the automation and tooling needed to aggregate, lint and render those documents for deployment. Something like that.",
+      "revId": "ee7bd61e8b804be2326225ccfb02d012a7073b0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7b5c0e22_eaedadde",
+        "filename": "docs/source/getting_started.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-03-26T23:59:08Z",
+      "side": 1,
+      "message": "Extra newline",
+      "revId": "ee7bd61e8b804be2326225ccfb02d012a7073b0a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
