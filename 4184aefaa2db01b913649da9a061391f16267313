@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "05f7322e_366efada",
+        "filename": "src/bin/pegleg/pegleg/config.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-04-04T19:42:39Z",
+      "side": 1,
+      "message": "This just replaces (e.g.) foo/bar/baz/// with foo/bar/baz/ right?",
+      "range": {
+        "startLine": 16,
+        "startChar": 36,
+        "endLine": 16,
+        "endChar": 56
+      },
+      "revId": "4184aefaa2db01b913649da9a061391f16267313",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cbaee455_152b3cd5",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-04-04T19:42:39Z",
+      "side": 1,
+      "message": "This needs to return False by default on L191",
+      "revId": "4184aefaa2db01b913649da9a061391f16267313",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5e541a0f_e14a93ba",
+        "filename": "src/bin/pegleg/tests/unit/test_selectable_linitng.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-04-04T19:42:39Z",
+      "side": 1,
+      "message": "return_value",
+      "range": {
+        "startLine": 49,
+        "startChar": 12,
+        "endLine": 49,
+        "endChar": 19
+      },
+      "revId": "4184aefaa2db01b913649da9a061391f16267313",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a57d3bee_f461b93e",
+        "filename": "src/bin/pegleg/tests/unit/test_selectable_linitng.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-04-04T19:42:39Z",
+      "side": 1,
+      "message": "return_value",
+      "range": {
+        "startLine": 60,
+        "startChar": 12,
+        "endLine": 60,
+        "endChar": 19
+      },
+      "revId": "4184aefaa2db01b913649da9a061391f16267313",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
