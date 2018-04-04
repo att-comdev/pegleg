@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "a4326a71_11ae8379",
+        "filename": "src/bin/pegleg/pegleg/config.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011672
+      },
+      "writtenOn": "2018-04-04T19:58:21Z",
+      "side": 1,
+      "message": "Yep, just trying to make it consistent if you don\u0027t specify a trailing slash.",
+      "parentUuid": "05f7322e_366efada",
+      "range": {
+        "startLine": 16,
+        "startChar": 36,
+        "endLine": 16,
+        "endChar": 56
+      },
+      "revId": "4184aefaa2db01b913649da9a061391f16267313",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cbaee455_152b3cd5",
         "filename": "src/bin/pegleg/pegleg/engine/lint.py",
         "patchSetId": 4
