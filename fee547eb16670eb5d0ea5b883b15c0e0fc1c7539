@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1bfacb00_dbc9b02e",
+        "filename": "src/bin/pegleg/tests/unit/test_engine_util_files.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-04-09T20:05:56Z",
+      "side": 1,
+      "message": "We can avoid creating a test file by using a fixture.\n\nFor example:\n\n    def test_no_non_yamls(tmpdir):\n        p \u003d tmpdir.mkdir(\"site_yamls\")\n        for x in range(3):  # Create 3 YAML files\n            p.join(\"good-%d.yaml\" % x)\n        p.join(\"bad.txt\") \n\n        # pass whatever the temp dir is to config\n        config.set_primary_repo(\"/temp/site_yamls\")\n        results \u003d files.all()\n\n        for i in results:\n            assert i.endswith(\u0027.yaml\u0027)\n\nhttps://docs.pytest.org/en/latest/tmpdir.html",
+      "revId": "fee547eb16670eb5d0ea5b883b15c0e0fc1c7539",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
