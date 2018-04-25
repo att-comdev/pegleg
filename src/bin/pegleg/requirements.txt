@@ -1,4 +1,4 @@
 click==6.7
 jsonschema==2.6.0
 pyyaml==3.12
-git+https://github.com/att-comdev/deckhand.git@99e3064eda9da0227780b57ee30baeb264b3040d#egg=deckhand
+git+https://github.com/att-comdev/deckhand.git@35f15ee601ebf89b93d657a1b78fedb3a8ebbe38
