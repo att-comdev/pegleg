@@ -170,8 +170,9 @@ def list_sites(primary_repo_base=None):
     """Get a list of site definition directories in the primary repo."""
     if not primary_repo_base:
         primary_repo_base = config.get_primary_repo()
-    for path in os.listdir(os.path.join(primary_repo_base, 'site')):
-        joined_path = os.path.join(primary_repo_base, 'site', path)
+    site_repo_path = os.path.join(primary_repo_base, 'site')
+    for path in os.listdir(site_repo_path):
+        joined_path = os.path.join(site_repo_path, path)
         if os.path.isdir(joined_path):
             yield path
 
@@ -199,7 +200,7 @@ def slurp(path):
     if not os.path.exists(path):
         raise click.ClickException(
             '%s not found.  pegleg must be run from '
-            'the root of a configuration repostiory.' % path)
+            'the root of a configuration repository.' % path)
 
     with open(path) as f:
         try:

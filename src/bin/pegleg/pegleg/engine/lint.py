@@ -38,7 +38,12 @@ DECKHAND_SCHEMAS = {
 }
 
 
-def full(fail_on_missing_sub_src=False, exclude_lint=None, warn_lint=None):
+def full(fail_on_missing_sub_src=False,
+         exclude_lint=None,
+         warn_lint=None,
+         site_repo_path=None):
+    exclude_lint = exclude_lint or []
+    warn_lint = warn_lint or []
     messages = []
     # If policy is cleartext and error is added this will put
     # that particular message into the warns list and all others will
@@ -49,7 +54,7 @@ def full(fail_on_missing_sub_src=False, exclude_lint=None, warn_lint=None):
     messages.extend(_verify_deckhand_render(fail_on_missing_sub_src))
 
     # All repos contain expected directories
-    messages.extend(_verify_no_unexpected_files())
+    messages.extend(_verify_no_unexpected_files(site_repo_path))
 
     errors = []
     warns = []
@@ -65,9 +70,9 @@ def full(fail_on_missing_sub_src=False, exclude_lint=None, warn_lint=None):
     return warns
 
 
-def _verify_no_unexpected_files():
+def _verify_no_unexpected_files(site_repo_path=None):
     expected_directories = set()
-    for site_name in util.files.list_sites():
+    for site_name in util.files.list_sites(site_repo_path):
         params = util.definition.load_as_params(site_name)
         expected_directories.update(util.files.directories_for(**params))
 
