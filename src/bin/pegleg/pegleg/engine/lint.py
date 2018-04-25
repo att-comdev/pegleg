@@ -39,6 +39,8 @@ DECKHAND_SCHEMAS = {
 
 
 def full(fail_on_missing_sub_src=False, exclude_lint=None, warn_lint=None):
+    exclude_lint = exclude_lint or []
+    warn_lint = warn_lint or []
     messages = []
     # If policy is cleartext and error is added this will put
     # that particular message into the warns list and all other will
