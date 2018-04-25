@@ -12,12 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from . import engine
-from pegleg import config
+import logging
+import os
+import sys
 
 import click
-import logging
-import sys
+
+from pegleg import config
+from pegleg import engine
+from pegleg.engine import errorcodes
 
 LOG = logging.getLogger(__name__)
 
@@ -70,10 +73,66 @@ def site(primary_repo, aux_repo):
     type=click.Path(
         file_okay=False, dir_okay=True, writable=True, resolve_path=True),
     default=sys.stdout,
-    help='Where to output')
+    help='Where to output the complete config.')
+@click.option(
+    '--no-validate',
+    'no_validate',
+    is_flag=True,
+    default=False,
+    help='Skip automatic validations of the documents collected in '
+    'save_location.')
+@click.option(
+    '-x',
+    '--exclude',
+    'exclude_lint',
+    multiple=True,
+    help='Excludes specified linting checks. Warnings will still be issued. '
+    '-w takes priority over -x.')
+@click.option(
+    '-w',
+    '--warn',
+    'warn_lint',
+    multiple=True,
+    help='Warn if linting check fails. -w takes priority over -x.')
 @click.argument('site_name')
-def collect(*, save_location, site_name):
+def collect(*, save_location, no_validate, exclude_lint, warn_lint, site_name):
+    irrelevant_errors = [
+        # Everything is dumped to one file, so checking the Pegleg directory
+        # structure in the target directory isn't applicable.
+        errorcodes.DOCUMENT_LAYER_MISMATCH,
+        # Everything is collected in one file, so checking files in secrets
+        # folder isn't applicable.
+        errorcodes.SECRET_NOT_ENCRYPTED_POLICY
+    ]
+
+    if not save_location.endswith('/site'):
+        save_location = os.path.join(save_location, 'site')
+        click.echo(
+            "Deployment files will be collected in path %s." % save_location)
+
+    if not os.path.exists(save_location):
+        click.echo(
+            "Save location: %s does not exist. Creating." % save_location)
+        os.makedirs(save_location)
+
+    exclude_lint = list(exclude_lint) or []
+    exclude_lint.extend(irrelevant_errors)
     engine.site.collect(site_name, save_location)
+
+    # Lint the target save location after collecting all the site documents.
+    if not no_validate:
+        config.set_primary_repo(os.path.join(save_location, os.pardir))
+        config.set_auxiliary_repo_list([])
+
+        warns = engine.lint.full(
+            fail_on_missing_sub_src=True,
+            warn_lint=warn_lint,
+            exclude_lint=exclude_lint,
+            collection_path=save_location)
+        if warns:
+            click.echo("Linting passed, but produced some warnings.")
+            for w in warns:
+                click.echo(w)
 
 
 @site.command(help='Find sites impacted by changed files')

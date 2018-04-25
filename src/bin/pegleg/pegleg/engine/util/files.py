@@ -199,7 +199,7 @@ def slurp(path):
     if not os.path.exists(path):
         raise click.ClickException(
             '%s not found.  pegleg must be run from '
-            'the root of a configuration repostiory.' % path)
+            'the root of a configuration repository.' % path)
 
     with open(path) as f:
         try:

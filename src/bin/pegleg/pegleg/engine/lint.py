@@ -38,18 +38,24 @@ DECKHAND_SCHEMAS = {
 }
 
 
-def full(fail_on_missing_sub_src=False, exclude_lint=None, warn_lint=None):
+def full(fail_on_missing_sub_src=False,
+         exclude_lint=None,
+         warn_lint=None,
+         collection_path=None):
+    exclude_lint = exclude_lint or []
+    warn_lint = warn_lint or []
     messages = []
     # If policy is cleartext and error is added this will put
     # that particular message into the warns list and all others will
     # be added to the error list if SCHEMA_STORAGE_POLICY_MISMATCH_FLAG
     messages.extend(_verify_file_contents())
 
-    # Deckhand Rendering completes without error
-    messages.extend(_verify_deckhand_render(fail_on_missing_sub_src))
-
     # All repos contain expected directories
     messages.extend(_verify_no_unexpected_files())
+
+    # Deckhand Rendering completes without error
+    messages.extend(
+        _verify_deckhand_render(fail_on_missing_sub_src, collection_path))
 
     errors = []
     warns = []
@@ -159,7 +165,20 @@ def _verify_document(document, schemas, filename):
     return errors
 
 
-def _verify_deckhand_render(fail_on_missing_sub_src=False):
+def _verify_deckhand_render(fail_on_missing_sub_src=False,
+                            collection_path=None):
+    if collection_path:
+        return _verify_dechkand_render_collection_path(collection_path,
+                                                       fail_on_missing_sub_src)
+    else:
+        return _verify_deckhand_render_site_paths(fail_on_missing_sub_src)
+
+
+def _verify_deckhand_render_site_paths(fail_on_missing_sub_src=False):
+    """Verify Deckhand render works by using all relevant deployment files
+    per site. This entails only selecting the appropriate site, type and global
+    deployment files per site and gathering up all the produced errors.
+    """
     sitenames = list(util.files.list_sites())
     documents_by_site = {s: [] for s in sitenames}
 
@@ -183,6 +202,30 @@ def _verify_deckhand_render(fail_on_missing_sub_src=False):
         LOG.debug('Generated %d rendering errors for site: %s.', len(errors),
                   sitename)
         all_errors.extend(errors)
+
+    return list(set(all_errors))
+
+
+def _verify_dechkand_render_collection_path(collection_path,
+                                            fail_on_missing_sub_src=False):
+    """Verify Deckhand render works by only using the documents in the
+    collected deployment file, stored in the collection path.
+    """
+    all_errors = []
+    documents = []
+    collection_files = util.files.search([collection_path])
+
+    for collection_file in collection_files:
+        with open(collection_file, 'r') as f:
+            documents.extend(list(yaml.safe_load_all(f)))
+    _, errors = util.deckhand.deckhand_render(
+        documents=documents,
+        fail_on_missing_sub_src=fail_on_missing_sub_src,
+        validate=True,
+    )
+    LOG.debug('Generated %d rendering errors for files: %s.', len(errors),
+              collection_files)
+    all_errors.extend(errors)
 
     return list(set(all_errors))
 
