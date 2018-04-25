@@ -16,6 +16,7 @@ from setuptools import setup
 
 setup(
     name='pegleg',
+    python_requires='>3.5.0',
     version='0.1.0',
     packages=['pegleg'],
     entry_points={

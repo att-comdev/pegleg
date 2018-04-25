@@ -72,8 +72,9 @@ Path to the root of an auxiliary repo.
 
 Collect
 -------
-Output complete config for one site.
-It is assumed that all lint errors have been corrected already.
+Output complete config for one site. :ref:`linting` is automatically executed
+following collection; however, it is recommended that no lint errors be present
+prior to collection.
 
 **site_name**
 
@@ -81,15 +82,40 @@ Name of the site. (Required).
 
 **-s / --save-location**
 
-Where to output.
+Where to output collected documents.
+
+**-x <code>** (Optional, validation only).
+
+Will excluded the specified lint option. -w takes priority over -x.
+
+**-w <code>** (Optional, validation only).
+
+Will warn of lint failures from the specified lint options.
+
+**--no-validate** (Optional, validation only).
+
+Perform no validation following collection.
+
+Usage:
 
 ::
 
     ./pegleg.sh <command> <options> collect site_name -s save_location
+    -x P001 -w P002 --no-validation
 
-    Example:
+Example without validation:
+
+::
+
     ./pegleg.sh site -p /workspace/repo_1 -a /workspace/repo_2
-    collect site_name -s /workspace
+    collect site_name -s /workspace --no-validate
+
+Example with validation:
+
+::
+
+    ./pegleg.sh site -p /workspace/repo_1 -a /workspace/repo_2
+    collect site_name -s /workspace -x P004
 
 Impacted
 --------
@@ -141,7 +167,7 @@ Where to output.
     Example:
     ./pegleg site -p /workspace/repo_1 show site_name -o /workspace
 
-
+.. _linting:
 
 Lint
 ----
