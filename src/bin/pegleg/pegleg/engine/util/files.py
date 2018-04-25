@@ -161,7 +161,7 @@ def _site_path(site_name):
 
 
 def list_sites(primary_repo_base=None):
-    """Get a list of site defintion directories in the primary repo."""
+    """Get a list of site definition directories in the primary repo."""
     if not primary_repo_base:
         primary_repo_base = config.get_primary_repo()
     for path in os.listdir(os.path.join(primary_repo_base, 'site')):
