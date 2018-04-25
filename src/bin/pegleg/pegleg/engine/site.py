@@ -21,6 +21,7 @@ import yaml
 import logging
 
 from pegleg.engine import util
+
 __all__ = ['collect', 'impacted', 'list_', 'show', 'render']
 
 LOG = logging.getLogger(__name__)
@@ -32,12 +33,10 @@ def collect(site_name, save_location):
         for (repo_base,
              filename) in util.definition.site_files_by_repo(site_name):
             repo_name = os.path.normpath(repo_base).split(os.sep)[-1]
+            save_file = os.path.join(save_location, repo_name + '.yaml')
             if repo_name not in save_files:
-                save_files[repo_name] = open(
-                    os.path.join(save_location, repo_name + ".yaml"), "w")
-            LOG.debug("Collecting file %s to file %s" %
-                      (filename,
-                       os.path.join(save_location, repo_name + '.yaml')))
+                save_files[repo_name] = open(save_file, "w")
+            LOG.debug("Collecting file %s to file %s" % (filename, save_file))
             with open(filename) as f:
                 save_files[repo_name].writelines(f.readlines())
     except Exception as ex:
