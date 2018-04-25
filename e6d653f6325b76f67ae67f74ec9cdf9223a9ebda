@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "53289922_e272ff29",
+        "filename": "src/bin/pegleg/tests/unit/test_engine_util_files.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-04-25T18:52:23Z",
+      "side": 1,
+      "message": "There was a lint failure here causing tox -e lint to fail but now it should be caught by CICD going forward.",
+      "revId": "e6d653f6325b76f67ae67f74ec9cdf9223a9ebda",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
