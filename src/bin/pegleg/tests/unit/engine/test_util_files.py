@@ -11,14 +11,16 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 import tempfile
 
 from pegleg import config
 from pegleg.engine.util import files
+from tests.unit.fixtures import create_tmp_deployment_files
 
 
 def test_no_non_yamls(tmpdir):
-    p = tmpdir.mkdir("site_yamls").mkdir("global")
+    p = tmpdir.mkdir("deployment_files").mkdir("global")
     for x in range(3):  # Create 3 YAML files
         p.join("good-%d.yaml" % x).write('fake-content')
     p.join("bad.txt").write("fake-content")
@@ -29,3 +31,24 @@ def test_no_non_yamls(tmpdir):
     # Make sure only YAML files are returned
     for i in results:
         assert i.endswith('.yaml')
+
+
+def test_list_all_files(create_tmp_deployment_files):
+    actual_files = sorted(files.all())
+    expected_files = sorted([
+        'deployment_files/global/common/global-common.yaml',
+        'deployment_files/global/v1.0/global-v1.0.yaml',
+        'deployment_files/type/cicd/common/type-common.yaml',
+        'deployment_files/type/cicd/v1.0/type-v1.0.yaml',
+        'deployment_files/site/cicd/secrets/secrets.yaml',
+        'deployment_files/site/cicd/site-definition.yaml',
+        'deployment_files/type/lab/common/type-common.yaml',
+        'deployment_files/type/lab/v1.0/type-v1.0.yaml',
+        'deployment_files/site/lab/site-definition.yaml',
+        'deployment_files/site/lab/software/software.yaml',
+    ])
+
+    assert len(actual_files) == len(expected_files)
+    for idx, file in enumerate(actual_files):
+        print(file, expected_files[idx])
+        assert file.endswith(expected_files[idx])
