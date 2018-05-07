@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "871bd36b_236901c4",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 1011939
+      },
+      "writtenOn": "2018-05-07T17:16:19Z",
+      "side": 1,
+      "message": "This doesn\u0027t seem correct. It appears to me you need to do a document collection for each unique site and then render/validate each collection. The current method would collect say all type layer libraries which combined may yield an invalid document set. But if only the library that is actually selected by the site definition is included, the set may be valid.",
+      "revId": "3e2f410dee215aa27530074bf9b4d10142a47a7d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
