@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66f09242_97a58dbe",
+        "filename": "src/bin/pegleg/tests/unit/engine/test_util_files.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-05-15T01:33:05Z",
+      "side": 1,
+      "message": "Remove",
+      "range": {
+        "startLine": 53,
+        "startChar": 7,
+        "endLine": 53,
+        "endChar": 40
+      },
+      "revId": "df0440724eaca6181689a9d1cd58aa549139148e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
