@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a4e2c478_d7bf2ff3",
+        "filename": "src/bin/pegleg/pegleg/engine/lint.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 172,
+      "author": {
+        "id": 1011672
+      },
+      "writtenOn": "2018-05-16T14:34:14Z",
+      "side": 1,
+      "message": "This seems right to me.  We probably want to refactor  `documents_by_site` into some util place later though.  We\u0027ll probably find another use for it soon enough :)",
+      "revId": "793080afc09b292224beee949d58611070911a79",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
