@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62753a09_00da3cc9",
+        "filename": "src/bin/pegleg/pegleg/engine/util/files.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1011942
+      },
+      "writtenOn": "2018-05-16T14:49:42Z",
+      "side": 1,
+      "message": "This needs to be primary_repo_base as this changes the interface",
+      "range": {
+        "startLine": 164,
+        "startChar": 15,
+        "endLine": 164,
+        "endChar": 29
+      },
+      "revId": "7341fc2dddd40f29fceaca17c9269d72fa75551a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
